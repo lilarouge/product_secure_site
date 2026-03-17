@@ -3,6 +3,8 @@ key.pem
 cert.pem
 localhost-key.pem
 localhost.pem
+venv/
+*.pem
 .env
 __pycache__/
 *.pyc
