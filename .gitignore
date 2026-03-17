@@ -1,0 +1,6 @@
+products.db
+cert.pem
+key.pem
+.env
+__pycache__/
+*.pyc

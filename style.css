@@ -1,0 +1,112 @@
+/* ===== Global Styles ===== */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f6fa;
+    margin: 0;
+    height: 100vh;
+
+    /* Flexbox to center content vertically and horizontally */
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+}
+
+/* ===== Container ===== */
+body > * {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* ===== Header ===== */
+h1 {
+    text-align: center;
+    color: #b4060f;
+    margin-bottom: 30px;
+}
+
+/* ===== Form Styles ===== */
+form {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus {
+    outline: none;
+    border-color: #b4060f;
+}
+
+/* ===== Buttons ===== */
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #b4060f;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #c25056b2;
+}
+
+/* ===== Links ===== */
+p a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #b4060f;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+p a:hover {
+    color: #c25056b2;
+}
+
+/* ===== Feedback Card ===== */
+#feedback {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #e1f5fe;
+    color: #b4060f;
+    font-weight: 500;
+    text-align: center;
+    display: none; 
+}
+
+#feedback.success {
+    display: block;
+    color: green;
+}
+#feedback.error {
+    display: block;
+    color: red;
+}
